@@ -77,3 +77,11 @@ html, body {
         font-size: 50px;}
 
     }
+
+   
+@media (min-width:768px) {
+  
+    .nav-brand  {
+        font-size: 24px;}
+
+    }
