@@ -64,7 +64,11 @@ html, body {
  .menu-items a {
     font-size: 14px;
     font-weight: 400;
-    padding: 0 30px;
+    padding: 0 15px;
+ }
+
+ .image-profile {
+     padding-left: 15px;
  }
 
 @media (max-width:768px) {
