@@ -9,9 +9,9 @@
   </head>
   <body>
     <header class="nav-container">
-      <nav class="nav-main">
+      <nav class="nav-main container">
         <div class="nav-brand">
-          <a  href="#">DSPlayGames</a>
+          <a href="#">DSPlayGames</a>
         </div>
         <ul class="menu-items">
           <li><a href="#news">Notícias</a></li>
@@ -26,9 +26,8 @@
     <main>
       <section id="news">
         <div class="container">
-         
           <div class="last-news">
-            <h1>Últimas notícias</h1>
+            <h1 class="title-last-news">Últimas notícias</h1>
           </div>
 
           <div class="card-news">
@@ -41,7 +40,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto vitae ducimus aperiam.
               </h3>
-              <hr>
+              <hr />
               <h4>23/02/2022</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -64,7 +63,7 @@
                 necessitatibus culpa fuga ...
               </p>
             </div>
-           
+
             <div class="card-more-news">
               <a href="#">Ler mais...</a>
             </div>
@@ -80,7 +79,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Architecto vitae ducimus aperiam.
               </h3>
-              <hr>
+              <hr />
               <h4>23/02/2022</h4>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -103,29 +102,47 @@
                 necessitatibus culpa fuga ...
               </p>
             </div>
-           
+
             <div class="card-more-news">
               <a href="#">Ler mais...</a>
             </div>
           </div>
         </div>
-        <button> <a href="#">Carregar mais</a> </button>
+
+        <button id="ctrl-read-more" name="read-more" type="submit">
+          Carregar mais
+        </button>
       </section>
 
       <section id="games">
-        <h1>Jogos</h1>
-        <div>
+        <h1 class="title-games container">Jogos</h1>
+
+        <div class="main-card-games container">
+        <div class="card-games container">
           <img src="img/game.png" alt="" />
-          <p>Horizon Forbidden West</p>
-          <p>De Sony Interactive Entertainment</p>
-          <div>
+            <p>Horizon Forbidden West</p>
+            <p>De Sony Interactive Entertainment</p>
             <p>9.7</p>
-          </div>
         </div>
+
+        <div class="card-games container">
+          <img src="img/game.png" alt="" />
+            <p>Horizon Forbidden West</p>
+            <p>De Sony Interactive Entertainment</p>
+            <p>9.7</p>
+        </div>
+        <div class="card-games container">
+          <img src="img/game.png" alt="" />
+            <p>Horizon Forbidden West</p>
+            <p>De Sony Interactive Entertainment</p>
+            <p>9.7</p>
+        </div>
+      </div>
+
       </section>
 
       <section id="form">
-        <h1>Faça sua inscrição</h1>
+        <h1 class="title-form container">Faça sua inscrição</h1>
         <form action="tanks.html">
           <div>
             <label for="ctrl-name"></label>
@@ -182,8 +199,8 @@
         <p>DS Play Games Ltda. Todos direitos reservados</p>
       </div>
       <div>
-          <a href="#">Política de privacidade</a>
-          <a href="#">Termos de uso</a>
+        <a href="#">Política de privacidade</a>
+        <a href="#">Termos de uso</a>
       </div>
     </footer>
   </body>
