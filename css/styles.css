@@ -90,9 +90,10 @@ a:hover {
 
 .card-news {
   background-color: var(--bg-color-silver);
-  padding: 10px 10px;
-  margin: 14px;
+  margin: 8px 10px;
+  margin-bottom: 20px;
   border-radius: 8px;
+  padding: 0 12px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 4px rgba(79, 79, 79, 0.5);
@@ -133,9 +134,6 @@ hr {
   padding-bottom: 7px;
 }
 
-.card-news {
-  padding: 12px;
-}
 .card-more-news a {
   color: var(--color-light-red);
   font-size: 14px;
@@ -157,7 +155,7 @@ button {
     font-size: 18px;
     font-weight: 700;
     border: none;
-    margin: 28px 0;
+    margin: 8px 0;
 
 }
 
