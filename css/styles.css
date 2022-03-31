@@ -99,7 +99,7 @@ h1 {
 
 .card-news {
   background-color: var(--bg-color-silver);
-  margin: 8px 10px;
+  margin: 0 10px;
   margin-bottom: 20px;
   border-radius: 8px;
   padding: 0 12px;
@@ -166,6 +166,7 @@ hr {
   border: none;
   margin: 8px 0;
   cursor: pointer;
+  margin-bottom: 40px;
 }
 
 #ctrl-read-more:hover {
@@ -176,43 +177,89 @@ hr {
 
 /* SECTION GAMES */
 
-#games {
-
-}
-
 .main-card-games {
- 
+  background-color: var(--bg-color-silver);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
 
-  
-}
 .title-games {
   color: var(--color-green);
   margin-top: 40px;
   margin-bottom: 30px;
 }
 
-.card-games {
+.group-cards {
+  display: flex;
+  flex-wrap: wrap;
+  }
 
+.card-games {
   background-color: var(--color-white);
-  margin: 0px 10px;
-  margin-bottom: 20px;
+  margin: 0 10px;
   border-radius: 8px;
- 
   display: flex;
   flex-direction: column;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
-
- 
+  max-width: 300px;
+  margin-bottom: 27px;
+  
 }
 
-.card-games img {
-  width: auto;
-
- 
+.image-game img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px 8px 0 0;
 }
+
 .card-games-description {
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.card-games-description p { 
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--color-dark-gray);
+  margin: 0;
+}
+
+.card-games-description p span{ 
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-green);
+  margin: 0;
+}
+
+.title-game p {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-dark-gray);
+  margin-top: 27.46px;
+}
+
+.title-prod {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.rate-game {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-green);
+  margin-top: 13px;
+  margin-bottom: 15px;
+}
+
+
+
 
 @media (min-width: 768px) {
   .nav-brand {
