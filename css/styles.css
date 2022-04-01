@@ -22,6 +22,7 @@ body {
   --color-white: #ffffff;
   --color-light-red: #dd7e92;
   --color-silver: #c4c4c4;
+  --color-red-suav: #dd607b;
 }
 
 a,
@@ -466,9 +467,9 @@ hr {
 }
 
 .bt-submit input:hover{
-  background-color:  #dd6b84;
+  background-color: var(--color-red-suav);
   color: var(--color-white);
-  border: 2px solid #dd6b84;
+  border: 2px solid var(--color-red-suav);
 }
 
 .bt-reset input:hover{
