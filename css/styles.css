@@ -31,13 +31,10 @@ footer {
   max-height: 300px;
   background-color: var(--ft-color-dark-gray);
   color: var(--color-white);
- font-size: 0.875rem ;
+  font-size: 0.875rem;
 }
 
-
-
 /* CLASSES, IDS */
-
 
 a,
 a:hover {
@@ -64,7 +61,7 @@ h1 {
   height: 90px;
   width: 100%;
   display: flex;
- /* position: fixed; */
+  /* position: fixed; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -102,7 +99,7 @@ h1 {
 /* SECTION NEWS */
 
 .last-news {
-  margin: 130px 0 8px 0;
+  margin: 40px 0 8px 0;
 }
 
 .title-last-news {
@@ -197,18 +194,19 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  }
+}
 
 .title-games {
   color: var(--color-green);
   margin-top: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .group-cards {
   display: flex;
   flex-wrap: wrap;
-  }
+  justify-content: center;
+}
 
 .card-games {
   background-color: var(--color-white);
@@ -219,7 +217,6 @@ hr {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
   max-width: 300px;
   margin-bottom: 27px;
-  
 }
 
 .image-game img {
@@ -234,7 +231,7 @@ hr {
   align-items: center;
 }
 
-.card-games-description p { 
+.card-games-description p {
   text-align: center;
   font-size: 0.875rem;
   font-weight: 400;
@@ -242,7 +239,7 @@ hr {
   margin: 0;
 }
 
-.card-games-description p span{ 
+.card-games-description p span {
   text-align: center;
   font-size: 0.875rem;
   font-weight: 700;
@@ -275,7 +272,7 @@ hr {
 
 /* SECTION FORM */
 
-#form{
+#form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,48 +293,45 @@ hr {
   margin-bottom: 20px;
   border-radius: 8px;
   box-shadow: 0px 4px 4px rgba(79, 79, 79, 0.5);
- /* border: 1px solid yellow; */
-  
+  /* border: 1px solid yellow; */
 }
 
-.form-card-input{
+.form-card-input {
   margin: 0 auto;
   width: 100%;
   max-width: 642px;
   padding: 50px 10px 0px 10px;
-  }
+}
 
-  .form-card-input label{
-    font-size: 1rem;
-    color: var(--color-dark-gray);
+.form-card-input label {
+  font-size: 1rem;
+  color: var(--color-dark-gray);
+}
 
-  }
-
-.form-card-input input{
+.form-card-input input {
   margin-bottom: 20px;
   width: 100%;
   height: 50px;
   border: 1px solid var(--color-dark-gray);
   border-radius: 4px;
   padding: 20px;
-  }
+}
 
-  .form-card-input input::placeholder{
-    color: var(--color-silver);
-    font-size: 1rem;
-  }
+.form-card-input input::placeholder {
+  color: var(--color-silver);
+  font-size: 1rem;
+}
 
-.form-main{
+.form-main {
   margin: 0 auto;
   width: 100%;
   max-width: 642px;
   padding: 0 10px;
   font-size: 1rem;
   color: var(--color-dark-gray);
-/*  border: 1px solid purple; */
+  /*  border: 1px solid purple; */
   margin-bottom: 10px;
   padding-bottom: 35px;
-
 }
 
 .form-group {
@@ -345,7 +339,7 @@ hr {
   margin: 0 auto;
 }
 
-.form-group label{
+.form-group label {
   cursor: pointer;
   padding-left: 7px;
 }
@@ -367,7 +361,7 @@ hr {
 }
 
 .radio:before {
-  content: '';
+  content: "";
   position: absolute;
   height: 9px;
   width: 9px;
@@ -382,10 +376,10 @@ hr {
 }
 
 .radio:focus {
-   box-shadow: 0 0 2px rgba(0,0,0, 1)
+  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
 }
 
-.form-main-chkbx{
+.form-main-chkbx {
   margin-top: 35px;
   margin: 0 auto;
   width: 100%;
@@ -393,11 +387,11 @@ hr {
   padding: 0 10px;
   font-size: 1rem;
   color: var(--color-dark-gray);
- /* border: 1px solid purple; */
+  /* border: 1px solid purple; */
   padding-bottom: 40px;
 }
 
-.checkbox  {
+.checkbox {
   cursor: pointer;
   width: 1.4375rem;
   appearance: none;
@@ -410,11 +404,10 @@ hr {
   justify-content: center;
   align-items: center;
   background-color: var(--color-white);
-
 }
 
 .checkbox:before {
-  content: '';
+  content: "";
   position: absolute;
   height: 9px;
   width: 5px;
@@ -433,10 +426,10 @@ hr {
 }
 
 .checkbox:focus {
-  box-shadow: 0 0 2px rgba(0,0,0, 1)
+  box-shadow: 0 0 2px rgba(0, 0, 0, 1);
 }
 
-.form-buttons{
+.form-buttons {
   width: 100%;
   max-width: 642px;
   margin: 0 auto;
@@ -444,10 +437,9 @@ hr {
   display: flex;
   justify-content: space-around;
   align-items: center;
-   
- }
+}
 
- .form-buttons input{
+.form-buttons input {
   width: 244px;
   height: 67px;
   border-radius: 8px;
@@ -457,8 +449,7 @@ hr {
   margin: 0 auto;
   cursor: pointer;
   margin-bottom: 20px;
-  
- }
+}
 
 .bt-submit input {
   background-color: var(--color-light-red);
@@ -466,18 +457,18 @@ hr {
 }
 
 .bt-reset input {
-  background-color:  var(--color-white);
-  color:var(--color-light-red);
+  background-color: var(--color-white);
+  color: var(--color-light-red);
   border: 2px solid var(--color-light-red);
 }
 
-.bt-submit input:hover{
+.bt-submit input:hover {
   background-color: var(--color-red-suav);
   color: var(--color-white);
   border: 2px solid var(--color-red-suav);
 }
 
-.bt-reset input:hover{
+.bt-reset input:hover {
   background-color: var(--color-gray-bt);
   color: var(--color-light-red);
   border: 2px solid var(--color-red-suav);
@@ -485,15 +476,15 @@ hr {
 
 /* FOOTER */
 
-.container-foot{
+.container-foot {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 302;
   margin-top: 40px;
-  }
+}
 
-.container-foot p{
+.container-foot p {
   margin-top: 37px;
   text-align: center;
 }
@@ -505,11 +496,11 @@ hr {
   align-items: center;
 }
 
-.social-medias a{
-    margin: 5px 0;
+.social-medias a {
+  margin: 5px 0;
 }
 
-.polices{
+.polices {
   margin-top: 37px;
   padding-bottom: 30px;
   display: flex;
@@ -517,14 +508,13 @@ hr {
   align-items: center;
 }
 
-.polices a{
+.polices a {
   margin: 5px 0;
-} 
+}
 
 /* RESPONSIVENESS */
 
 @media (min-width: 768px) {
-
 
   .nav-brand {
     font-size: 24px;
@@ -539,24 +529,52 @@ hr {
     list-style-type: none;
     justify-content: end;
   }
+  .last-news {
+    margin: 40px 0;
+  }
 
-  .container-foot{
+  .card-news {
+    margin-top: 40px;
+  }
+
+  .card-news h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-news h3 {
+    font-size: 1rem;
+  }
+
+  #ctrl-read-more {
+    margin: 20px 0 56px 0;
+  }
+
+  .title-games {
+    margin: 36px 0 73px 0;
+  }
+
+  .group-cards {
+    margin-bottom: 70px;
+  }
+
+  #form h1 {
+    margin: 40px 0;
+  }
+
+  .container-foot {
     margin-top: 61px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
     padding: 0 100px;
-    height: 190px;  
+    height: 190px;
   }
 
-  .social-medias a{
+  .social-medias a {
     margin: 0;
-}
-  .polices a{
+  }
+  .polices a {
     margin: 0;
-  } 
-
-
-
+  }
 }
