@@ -6,13 +6,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
 :root {
   --bg-color-silver: #f0f0f0;
   --radio-color-ligth-gray: #999999;
@@ -23,7 +16,28 @@ body {
   --color-light-red: #dd7e92;
   --color-silver: #c4c4c4;
   --color-red-suav: #dd607b;
+  --color-gray-bt: #ffffff62;
 }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  width: 100%;
+  max-height: 300px;
+  background-color: var(--ft-color-dark-gray);
+  color: var(--color-white);
+ font-size: 0.875rem ;
+}
+
+
+
+/* CLASSES, IDS */
+
 
 a,
 a:hover {
@@ -171,8 +185,8 @@ hr {
 }
 
 #ctrl-read-more:hover {
-  background-color: var(--bg-color-silver);
-  color: var(--color-light-red);
+  background-color: var(--color-red-suav);
+  color: var(--color-white);
   border: 1px solid var(--radio-color-ligth-gray);
 }
 
@@ -464,18 +478,54 @@ hr {
 }
 
 .bt-reset input:hover{
-  background-color: var(--color-silver);
-  color: var(--color-white);
-  border: 2px solid var(--radio-color-ligth-gray);
+  background-color: var(--color-gray-bt);
+  color: var(--color-light-red);
+  border: 2px solid var(--color-red-suav);
 }
 
 /* FOOTER */
 
+.container-foot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 302;
+  margin-top: 40px;
+  }
 
+.container-foot p{
+  margin-top: 37px;
+  text-align: center;
+}
+
+.social-medias {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-medias a{
+    margin: 5px 0;
+}
+
+.polices{
+  margin-top: 37px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.polices a{
+  margin: 5px 0;
+} 
 
 /* RESPONSIVENESS */
 
 @media (min-width: 768px) {
+
+
   .nav-brand {
     font-size: 24px;
   }
@@ -489,4 +539,24 @@ hr {
     list-style-type: none;
     justify-content: end;
   }
+
+  .container-foot{
+    margin-top: 61px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0 100px;
+    height: 190px;  
+  }
+
+  .social-medias a{
+    margin: 0;
+}
+  .polices a{
+    margin: 0;
+  } 
+
+
+
 }
