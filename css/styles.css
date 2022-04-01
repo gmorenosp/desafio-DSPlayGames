@@ -291,7 +291,6 @@ hr {
   width: 100%;
   max-width: 642px;
   padding: 50px 10px 0px 10px;
- /* border: 1px solid yellow; */
   }
 
   .form-card-input label{
@@ -427,10 +426,10 @@ hr {
   width: 100%;
   max-width: 642px;
   margin: 0 auto;
- /* border: 1px solid red; */
   flex-wrap: wrap;
   display: flex;
   justify-content: space-around;
+  align-items: center;
    
  }
 
@@ -438,13 +437,13 @@ hr {
   width: 244px;
   height: 67px;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 1.12rem;
   font-weight: 700;
   border: none;
   margin: 0 auto;
   cursor: pointer;
   margin-bottom: 20px;
-  align-items: center;
+  
  }
 
 .bt-submit input {
