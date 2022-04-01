@@ -49,7 +49,7 @@ h1 {
   height: 90px;
   width: 100%;
   display: flex;
-  position: fixed;
+ /* position: fixed; */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -258,8 +258,230 @@ hr {
   margin-bottom: 15px;
 }
 
+/* SECTION FORM */
+
+#form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 12px;
+}
+
+#form h1 {
+  color: var(--color-dark-gray);
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+#form form {
+  width: 100%;
+  max-width: 790px;
+  background-color: var(--bg-color-silver);
+  margin: 0 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(79, 79, 79, 0.5);
+ /* border: 1px solid yellow; */
+  
+}
+
+.form-card-input{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 642px;
+  padding: 50px 10px 0px 10px;
+ /* border: 1px solid yellow; */
+  }
+
+  .form-card-input label{
+    font-size: 1rem;
+    color: var(--color-dark-gray);
+
+  }
+
+.form-card-input input{
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid var(--color-dark-gray);
+  border-radius: 4px;
+  padding: 20px;
+  }
+
+  .form-card-input input::placeholder{
+    color: var(--color-silver);
+    font-size: 1rem;
+  }
+
+.form-main{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 642px;
+  padding: 0 10px;
+  font-size: 1rem;
+  color: var(--color-dark-gray);
+/*  border: 1px solid purple; */
+  margin-bottom: 10px;
+  padding-bottom: 35px;
+
+}
+
+.form-group {
+  display: flex;
+  margin: 0 auto;
+}
+
+.form-group label{
+  cursor: pointer;
+  padding-left: 7px;
+}
+
+.radio {
+  cursor: pointer;
+  width: 1.4375rem;
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border: 1px solid var(--radio-color-ligth-gray);
+  border-radius: 50%;
+  outline: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+}
+
+.radio:before {
+  content: '';
+  position: absolute;
+  height: 9px;
+  width: 9px;
+  background-color: var(--radio-color-ligth-gray);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+}
+
+.radio:checked:before {
+  opacity: 1;
+}
+
+.radio:focus {
+   box-shadow: 0 0 2px rgba(0,0,0, 1)
+}
+
+.form-main-chkbx{
+  margin-top: 35px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 642px;
+  padding: 0 10px;
+  font-size: 1rem;
+  color: var(--color-dark-gray);
+ /* border: 1px solid purple; */
+  padding-bottom: 40px;
+}
+
+.checkbox  {
+  cursor: pointer;
+  width: 1.4375rem;
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border: 1px solid var(--radio-color-ligth-gray);
+  outline: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+
+}
+
+.checkbox:before {
+  content: '';
+  position: absolute;
+  height: 9px;
+  width: 5px;
+  background-color: var(--radio-color-ligth-gray);
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+  border-right: 4px solid var(--radio-color-ligth-gray);
+  border-bottom: 4px solid var(--radio-color-ligth-gray);
+  transform: rotate(45deg);
+  top: 2px;
+}
+
+.checkbox:checked:before {
+  opacity: 1;
+  background: none;
+}
+
+.checkbox:focus {
+  box-shadow: 0 0 2px rgba(0,0,0, 1)
+}
+
+.form-buttons{
+  width: 100%;
+  max-width: 642px;
+  margin: 0 auto;
+ /* border: 1px solid red; */
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+   
+ }
+
+.bt-submit input {
+
+  width: 244px;
+  height: 67px;
+  border-radius: 8px;
+  background-color: var(--color-light-red);
+  color: var(--color-white);
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.bt-reset input {
+
+  width: 244px;
+  height: 67px;
+  border-radius: 8px;
+  background-color:  var(--color-white);
+  color:var(--color-light-red);
+  border: 2px solid var(--color-light-red);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-bottom: 33px;
+  align-items: center;
+}
+
+.bt-submit input:hover{
+  background-color:  #dd6b84;
+  color: var(--color-white);
+  border: 2px solid #dd6b84;
+}
+
+.bt-reset input:hover{
+  background-color: var(--color-silver);
+  color: var(--color-white);
+  border: 2px solid var(--radio-color-ligth-gray);
+}
 
 
+
+
+
+/* RESPONSIVENESS */
 
 @media (min-width: 768px) {
   .nav-brand {

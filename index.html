@@ -119,7 +119,6 @@
           <h1 class="title-games">Jogos</h1>
 
           <div class="group-cards container">
-
             <div class="card-games">
               <div class="image-game">
                 <img src="img/game.png" alt="Horizon Forbidden West" />
@@ -128,7 +127,7 @@
               <div class="card-games-description">
                 <div class="title-game">
                   <p>Horizon Forbidden West</p>
-                 </div>
+                </div>
                 <p><span>De</span> Sony Interactive Entertainment</p>
                 <div class="rate-game">9.7</div>
               </div>
@@ -142,7 +141,7 @@
               <div class="card-games-description">
                 <div class="title-game">
                   <p>Horizon Forbidden West</p>
-                 </div>
+                </div>
                 <p><span>De</span> Sony Interactive Entertainment</p>
                 <div class="rate-game">9.7</div>
               </div>
@@ -156,63 +155,68 @@
               <div class="card-games-description">
                 <div class="title-game">
                   <p>Horizon Forbidden West</p>
-                 </div>
+                </div>
                 <p><span>De</span> Sony Interactive Entertainment</p>
                 <div class="rate-game">9.7</div>
               </div>
             </div>
-
-
-         
           </div>
         </div>
       </section>
 
       <section id="form">
         <h1 class="title-form container">Faça sua inscrição</h1>
+
         <form action="tanks.html">
-          <div>
-            <label for="ctrl-name"></label>
-            <input
-              id="ctrl-name"
-              name="name"
-              type="text"
-              placeholder="Nome completo"
-            />
-          </div>
-          <div>
-            <label for="ctrl-email"></label>
-            <input
-              id="ctrl-email"
-              name="email"
-              type="email"
-              placeholder="Email"
-            />
-          </div>
-          <div>
+          <div class="form-card-input">
+            <div>
+              <label for="ctrl-name"></label>
+              <input
+                id="ctrl-name"
+                name="name"
+                type="text"
+                placeholder="Nome completo"
+              />
+            </div>
+            <div>
+              <label for="ctrl-email"></label>
+              <input
+                id="ctrl-email"
+                name="email"
+                type="email"
+                placeholder="Email"
+              />
+            </div>
             <label for="ctrl-plataform">Qual sua plataforma preferida?</label>
-            <div id="ctrl-plataform">
-              <input type="radio" name="plataform" id="ctrl-plataform-pc" />
+          </div>
+
+          <div class="form-main" id="ctrl-plataform">
+            <div class="form-group">
+              <input class="radio" type="radio" name="plataform" id="ctrl-plataform-pc" checked/>
               <label for="ctrl-plataform-pc">PC</label>
-              <input type="radio" name="plataform" id="ctrl-plataform-xbox" />
+            </div>
+            <div class="form-group">
+              <input class="radio" type="radio" name="plataform" id="ctrl-plataform-xbox"/>
               <label for="ctrl-plataform-xbox">Xbox</label>
-              <input type="radio" name="plataform" id="ctrl-plataform-ps" />
+            </div>
+            <div class="form-group">
+              <input class="radio" type="radio" name="plataform" id="ctrl-plataform-ps"/>
               <label for="ctrl-plataform-ps">Playstation</label>
             </div>
           </div>
           <label for="ctrl-receive-news"></label>
-          <div id="ctrl-receive-news">
-            <input
-              id="ctrl-receive-news-yes"
-              name="receive-news-yes"
-              type="checkbox"
-            />
+          <div class="form-main-chkbx form-group"  id="ctrl-receive-news">
+            <input class="checkbox" id="ctrl-receive-news-yes" name="receive-news-yes" type="checkbox" />
             <label for="ctrl-receive-news-yes">Desejo receber novidades.</label>
           </div>
-
-          <div>
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Limpar" />
+          <div class="form-buttons">
+            <div class="bt-submit">
+              <input type="submit" value="Enviar" />
+            </div>
+            <div class="bt-reset">
+              <input type="reset" value="Limpar" />
+            </div>
+            
           </div>
         </form>
       </section>
